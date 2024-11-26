@@ -3,21 +3,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #121212; /* Sfondo scuro */
+    color: #e0e0e0; /* Testo chiaro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che l'altezza occupi sempre tutto lo schermo */
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #1e1e1e; /* Sfondo scuro per l'header */
+    color: #81c784; /* Testo in verde chiaro */
+    border-bottom: 2px solid #4CAF50; /* Linea decorativa */
 }
 
 main {
+    flex: 1; /* Rende il contenuto flessibile per occupare lo spazio disponibile */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Centra verticalmente il contenuto */
     margin: 20px;
 }
 
@@ -27,14 +33,14 @@ button {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Verde pulsante */
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #388e3c; /* Verde scuro quando hover */
 }
 
 .hidden {
@@ -51,7 +57,7 @@ button:hover {
 .risposte img, .risposte button {
     width: 150px;
     height: 150px;
-    border: 2px solid #ddd;
+    border: 2px solid #424242; /* Bordo grigio scuro */
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s, border-color 0.2s;
@@ -59,12 +65,16 @@ button:hover {
 
 .risposte img:hover, .risposte button:hover {
     transform: scale(1.1);
-    border-color: #4CAF50;
+    border-color: #4CAF50; /* Bordo verde quando hover */
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #1e1e1e; /* Sfondo scuro per il footer */
+    color: #e0e0e0; /* Testo chiaro */
+    border-top: 2px solid #4CAF50; /* Linea decorativa */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Occupa tutta la larghezza */
 }
