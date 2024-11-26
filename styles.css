@@ -3,23 +3,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Sfondo scuro */
+    background-color: #0d1b2a; /* Sfondo blu scuro */
     color: #e0e0e0; /* Testo chiaro */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assicura che l'altezza occupi sempre tutto lo schermo */
+    min-height: 100vh; /* Altezza minima dello schermo */
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #1e1e1e; /* Sfondo scuro per l'header */
-    color: #81c784; /* Testo in verde chiaro */
-    border-bottom: 2px solid #4CAF50; /* Linea decorativa */
+    background-color: #1b263b; /* Blu scuro per l'header */
+    color: #a9d6e5; /* Testo blu chiaro */
+    border-bottom: 2px solid #4cc9f0; /* Linea decorativa blu acceso */
 }
 
 main {
-    flex: 1; /* Rende il contenuto flessibile per occupare lo spazio disponibile */
+    flex: 1; /* Contenuto flessibile per occupare lo spazio disponibile */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,14 +33,15 @@ button {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50; /* Verde pulsante */
-    color: white;
+    background-color: #4cc9f0; /* Blu acceso per il pulsante */
+    color: #0d1b2a; /* Testo scuro per contrasto */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #388e3c; /* Verde scuro quando hover */
+    background-color: #3a86ff; /* Blu più scuro quando hover */
+    transform: scale(1.05); /* Leggero ingrandimento */
 }
 
 .hidden {
@@ -57,7 +58,7 @@ button:hover {
 .risposte img, .risposte button {
     width: 150px;
     height: 150px;
-    border: 2px solid #424242; /* Bordo grigio scuro */
+    border: 2px solid #274c77; /* Bordo blu scuro */
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s, border-color 0.2s;
@@ -65,15 +66,15 @@ button:hover {
 
 .risposte img:hover, .risposte button:hover {
     transform: scale(1.1);
-    border-color: #4CAF50; /* Bordo verde quando hover */
+    border-color: #4cc9f0; /* Bordo blu acceso quando hover */
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #1e1e1e; /* Sfondo scuro per il footer */
-    color: #e0e0e0; /* Testo chiaro */
-    border-top: 2px solid #4CAF50; /* Linea decorativa */
+    background-color: #1b263b; /* Sfondo blu scuro per il footer */
+    color: #a9d6e5; /* Testo blu chiaro */
+    border-top: 2px solid #4cc9f0; /* Linea decorativa blu acceso */
     position: relative;
     bottom: 0;
     width: 100%; /* Occupa tutta la larghezza */
