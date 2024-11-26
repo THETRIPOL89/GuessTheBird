@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indovina l'Uccello</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Indovina l'Uccello</h1>
+        <p>Metti alla prova la tua conoscenza sugli uccelli!</p>
+    </header>
+    
+    <main>
+        <section id="modalita">
+            <h2>Scegli una modalità</h2>
+            <button id="nome-immagine">Nome -> Immagine</button>
+            <button id="immagine-nome">Immagine -> Nome</button>
+        </section>
+        
+        <section id="gioco" class="hidden">
+            <h2 id="titolo-modalita"></h2>
+            <div id="domanda"></div>
+            <div id="risposte" class="risposte"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creato con ❤️ per gli amanti degli uccelli</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
