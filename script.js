@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Funzione per mischiare gli array
     const shuffle = (array) => array.sort(() => Math.random() - 0.5);
 
+    // Funzione per selezionare 4 opzioni casuali
+    const selezionaOpzioni = (array, numero) => shuffle(array).slice(0, numero);
+
     // Modalità Nome -> Immagine
     modalitaNomeImmagine.addEventListener("click", () => {
         titoloModalita.textContent = "Seleziona l'immagine corretta per il nome dell'uccello";
@@ -65,18 +68,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function avviaGioco(modalita) {
         // Seleziona una domanda casuale
-        const domanda = dati[Math.floor(Math.random() * dati.length)];
-        const risposte = shuffle(dati);
+        const domanda = uccelliItaliani[Math.floor(Math.random() * uccelliItaliani.length)];
+        // Seleziona 4 opzioni casuali
+        const opzioni = selezionaOpzioni(uccelliItaliani, 4);
 
         // Popola la domanda e le risposte
         if (modalita === "nome-immagine") {
             domandaDiv.textContent = `Qual è l'immagine del "${domanda.nome}"?`;
-            risposteDiv.innerHTML = risposte.map(r => `
+            risposteDiv.innerHTML = opzioni.map(r => `
                 <img src="${r.immagine}" alt="${r.nome}" data-nome="${r.nome}">
             `).join("");
         } else {
             domandaDiv.innerHTML = `<img src="${domanda.immagine}" alt="${domanda.nome}">`;
-            risposteDiv.innerHTML = risposte.map(r => `
+            risposteDiv.innerHTML = opzioni.map(r => `
                 <button data-nome="${r.nome}">${r.nome}</button>
             `).join("");
         }
