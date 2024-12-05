@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalitaImmagineNome = document.getElementById("immagine-nome");
 
     // Dati fittizi
-    const dati = [
+    const uccelliItaliani = [
         { nome: "Airone bianco maggiore", immagine: "https://img2.juzaphoto.com/002/shared_files/uploads_hr/2695236_large25753.jpg" },
         { nome: "Airone cenerino", immagine: "https://th.bing.com/th/id/OIP.ttFn0Sfyhfbq3yUi7gpwlQHaH3?rs=1&pid=ImgDetMain" },
         { nome: "Albanella reale", immagine: "https://th.bing.com/th/id/R.416f2666a7be444701805a8c80162dd6?rik=m2m40b8ctosfNg&pid=ImgRaw&r=0" },
